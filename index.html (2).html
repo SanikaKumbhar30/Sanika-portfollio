@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website</title>
+
+  <style>
+    /* ---------- GENERAL STYLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #007bff;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    #about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3941e2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #about div {
+      max-width: 500px;
+    }
+
+    /* ---------- SKILLS SECTION ---------- */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skill {
+      background-color: gainsboro;
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-8px);
+    }
+
+    /* ---------- PROJECTS SECTION ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project h3 {
+      padding: 15px;
+      color: #333;
+    }
+
+    .project p {
+      padding: 0 15px 20px;
+      color: #666;
+    }
+
+    .project:hover {
+      transform: translateY(-8px);
+    }
+
+    /* ---------- CONTACT SECTION ---------- */
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      #about {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Hello, I'm <span style="color: #ffeb3b;">Sanika Kumbhar</span></h1>
+    <p>Web Developer | Designer | Creative Thinker</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <img src="WhatsApp Image 2025-11-14 at 5.58.13 PM.jpeg" alt="Your Photo" />
+    <div>
+      <h2>About Me</h2>
+      <p>
+        <b>Hello, I am Sanika Kumbhar. A motivated and curious second-year BTech student passionate about engineering and emerging technologies. 
+        I am eager to learn, build, and contribute to impactful projects. Currently exploring opportunities to expand my knowledge in Computer Science.
+        I am a passionate learner who loves coding and design. I enjoy learning new technologies.</b>
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill"><b>HTML</b></div>
+      <div class="skill"><b>CSS</b></div>
+      <div class="skill"><b>JavaScript</b></div>
+      <div class="skill"><b>Python</b></div>
+      <div class="skill"><b>C</b></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="Tic-Tac-Toe-Game.jpg" alt="Project 1" />
+        <h3>Tic Tac Toe Game</h3>
+        <p>A tic tac toe game using python.</p>
+      </div>
+      <div class="project">
+        <img src="website.jpg" alt="Project 2" />
+        <h3>Personal Website</h3>
+        <p>A personal portfolio website showcasing my projects and skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sanukumbhar3031@gmail.com">sanukumbhar3031@gmail.com</a></p>
+    <p>Contact No.: +918262879298</p>
+  </section>
+</body>
+</html>
